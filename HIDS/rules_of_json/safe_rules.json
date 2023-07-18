@@ -1,0 +1,40 @@
+
+{
+    "php.ini":{
+        "separator":"=",
+        "commentor":";",
+        "scitems":{
+            "disable_functions": "system,passthru,exec,shell_exec,popen,phpinfo",
+            "allow_url_include": "off",
+            "display_errors": "off",
+            "debug": "off",
+            "upload_max_filesize": "5M",
+            "lmagic_quotes_gpc": "on",
+            "safe_mode_gid": "on",
+            "open_basedir": "/opt/lampp/htdocs/",
+            "expose_php": "off"
+        }
+    },
+
+    "my.cnf":{
+        "separator":"=",
+        "commentor":"#",
+        "scitems":{
+            "general_log" :"ON",
+            "general_log_file" :"/opt/lampp/logs/mysql_log",
+            "log_output" : "file"
+        }
+    },
+
+    "httpd.conf":{
+        "separator":" ",
+        "commentor":"#",
+        "scitems":{
+            "ServerRoot": "/opt/lampp/htdocs/DVWA-master",
+            "Listen": "90",
+            "ServerName": "locahost"
+        }
+    }
+
+
+}
