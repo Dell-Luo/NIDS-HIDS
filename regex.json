@@ -1,0 +1,20 @@
+{
+    "regex_sql": "union.+select|updatexml|concat|information_schema|database\\(|and if\\(|or if\\(",
+    "regex_xss": "%3Cscript%3E|javascript.*:|<script>|onclick.*=|onerror.*=|Image\\(\\).src|location.href.*=",
+    "regex_scan": "gopher.*|phar.*|dict.*|\\.\\./\\.\\./.+|!doctype.+!entity",
+    "regex_unser": ".*%22S%22%3A1.*|.*%3A%7Bs%3A1.*|.*\"S\":.*|.*:{s.*|content-length:.+(o:.*\";})'",
+    "regex_csrf": "Referer: http://(\\d+\\.\\d+\\.\\d+\\.\\d+)/",
+    "regex_uoload": "eval\\(|assert\\(|passthru\\(|pfsockopen\\(",
+    "regex_cmd": "crontab.*|wget\\+.*|echo.*>.*|echo.*>>.*|netstat.*",
+    "regex_web_b": "username=.*password=.*",
+    "regex_mysql_b": "native_password",
+    "regexweb_b": "username=.*password=.*",
+    "regex_ant": ".*QGluaV9zZXQoImRpc3BsYXlfZXJyb3JzIiwgIjAiKTtAc.*|.+qvfcynl_reebef.+|.+function%20asenc.+|ChR\\(116\\).ChR\\(41\\).ChR\\(123\\).|ChR\\(0x20\\).ChR\\(0x61\\).ChR\\(0x73\\)|\\$bpjq=qveanzr",
+    "regex_behinder": "3Mn1yNMtoZViV5wotQHPJtwwj0F4b2l",
+    "regex_godzila": ".*urldecode%28%27K0QfK0QfgACIgoQD9BCIgACIgACIK0wOpkXZrRCLhRXYk.*",
+    "regex_chopper": ".*gwKTtAc2V0X21hZ2ljX3F1b3Rlc19ydW50aW1lKDApO2V.*",
+
+    "access_frequency_web": 15 ,
+    "access_frequency_mysql": 15 ,
+    "access_frequency_tcp": 20000 
+}
